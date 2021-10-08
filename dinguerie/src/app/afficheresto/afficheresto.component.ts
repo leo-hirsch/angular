@@ -9,8 +9,6 @@ import {Resto} from "../models/resto";
 export class AfficherestoComponent implements OnInit {
   @Input() restos: Resto[] = [];
 
-  constructor() { }
-
   ngOnInit(): void {
   }
 

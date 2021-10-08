@@ -7,12 +7,16 @@ import {RestoService} from "./resto.service";
 import { AfficherestoComponent } from './afficheresto/afficheresto.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { RestoFormComponent } from './resto-form/resto-form.component';
+import { CouleurDirective } from './couleur.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     RestoComponent,
-    AfficherestoComponent
+    AfficherestoComponent,
+    RestoFormComponent,
+    CouleurDirective
   ],
   imports: [
     BrowserModule,

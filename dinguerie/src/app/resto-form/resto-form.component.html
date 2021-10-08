@@ -1,0 +1,14 @@
+<h2>Ajouter un resto</h2>
+
+<form #form="ngForm" (ngSubmit)="submit()">
+  <div>
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" required minlength="3" [(ngModel)]="resto.nom">
+  </div>
+  <div>
+    <label for="adresse">Adresse</label>
+    <input type="text" id="adresse" name="adresse" required minlength="5" [(ngModel)]="resto.adresse">
+  </div>
+  <input type="submit">
+</form>
+

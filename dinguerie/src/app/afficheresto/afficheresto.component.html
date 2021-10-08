@@ -5,6 +5,7 @@
     <th>Adresse</th>
     <th>Nom</th>
     <th>Nombre d'étoiles moyen</th>
+    <th>Détails</th>
   </tr>
   </thead>
   <tbody>
@@ -12,7 +13,8 @@
     <td>{{resto.id}}</td>
     <td>{{resto.adresse}}</td>
     <td>{{resto.nom}}</td>
-    <td *ngFor="let com of resto.evaluations">{{com.etoiles}}</td>
+    <td jaune>/</td>
+    <td><a href="">Détail</a></td>
   </tr>
   </tbody>
 </table>
