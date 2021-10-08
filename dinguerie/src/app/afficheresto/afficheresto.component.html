@@ -1,0 +1,19 @@
+<table>
+  <thead>
+  <tr>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Nom</th>
+    <th>Nombre d'étoiles moyen</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let resto of restos">
+    <td>{{resto.id}}</td>
+    <td>{{resto.adresse}}</td>
+    <td>{{resto.nom}}</td>
+    <td *ngFor="let com of resto.evaluations">{{com.etoiles}}</td>
+  </tr>
+  </tbody>
+</table>
+

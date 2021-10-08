@@ -2,15 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { RestoComponent } from './resto/resto.component';
+import {RestoService} from "./resto.service";
+import { AfficherestoComponent } from './afficheresto/afficheresto.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RestoComponent,
+    AfficherestoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [RestoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
